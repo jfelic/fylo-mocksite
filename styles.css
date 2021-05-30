@@ -14,6 +14,10 @@ body {
     max-width: 100%;
 }
 
+.navigation {
+    margin:1rem;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -21,6 +25,8 @@ a {
 
 li {
     list-style: none;
+    display: inline;
+    padding: 5px;
 }
 
 img {
@@ -51,38 +57,69 @@ header,
 
 .fylo-logo-header {
     transform: scale(.60);
-    padding: 1em 1em 1em .25em;
-    margin: 1em 1em 1em .25em;
+    padding: 1em 0 1em .25em;
+    margin: 1em 0 1em .25em;
     overflow:none;
 }
 
 .main-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.navigation {
-    width: 100%;
-}
-
-.navigation ul li {
-    display: inline;
-    padding: .5em;
-    word-wrap: none;
-}
 
 .navigation a:hover {
     font-weight: 700;
     text-decoration: underline;
 }
 
-ul {
-    text-align:end;
-    padding: 1em;
+.intro-section {
+    padding-bottom: 1em;
+}
+
+.intro-section h1, 
+.intro-section p {
+    text-align: center;
+}
+
+.button1 {
+    color: white;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    font-family: inherit;
+    border: 0;
+    padding: .25em;
+    width: 70%;
+    height: 5em;
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+.button1:hover {
+    background-image: linear-gradient(to right, hsl(176, 94%, 74%), hsl(198, 100%, 67%));
+    transform: scale(1.02);
+}
+
+.div-button1 {
+    display: flex;
+    justify-content: center;
     margin: 1em;
-    min-width: 200px;
-    white-space: nowrap;
+}
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.features-section img {
+    max-width: 85px;
+    margin: 2em;
+}
+
+.features-section p {
+    text-align: center;
 }
 
 
