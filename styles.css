@@ -40,6 +40,7 @@ header,
 
 footer {
     background-color:  hsl(216, 53%, 9%);
+    padding-top: 15rem;
 }
 
 header,
@@ -47,6 +48,7 @@ header,
 .email-sign-up {
     background-color: hsl(217, 28%, 15%);
     width: 100%;
+    text-align: center;
 }
 
         /*--Typography----------*/
@@ -65,7 +67,9 @@ header,
 }
 
 
-.navigation a:hover {
+.navigation a:hover,
+.footer-nav1 ul a:hover,
+.footer-nav2 ul a:hover  {
     font-weight: 700;
     text-decoration: underline;
 }
@@ -152,7 +156,10 @@ p,
     display: block;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 325px;
+    margin-top: 150px;
 }
+
 
 .satish-block,
 .bruce-block,
@@ -185,13 +192,6 @@ p,
     font-size: .9em;
 }
 
-.email-sign-up {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 10px;
-}
 
 .email-sign-up {
     display: flex;
@@ -199,6 +199,17 @@ p,
     align-items: center;
     text-align: center;
     box-shadow: 4px 4px 8px hsl(225, 10%, 8%);
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 3425px;
+    left: 5%;
+}
+
+.email-sign-up h2,
+.email-sign-up p {
+    margin: .8em;
 }
 
 input {
@@ -218,7 +229,7 @@ input::placeholder {
     font-family: inherit;
     border: 0;
     padding: .25em;
-    width: 70%;
+    width: 90%;
     height: 3.5em;
     font-weight: bold;
     border-radius: 100px;
@@ -231,7 +242,7 @@ input::placeholder {
     font-family: inherit;
     border: 0;
     padding: .25em;
-    width: 70%;
+    width: 90%;
     height: 3.5em;
     font-weight: bold;
     border-radius: 100px;
@@ -245,12 +256,66 @@ input::placeholder {
 }
 
 #email:focus {
-    border:hsl(198, 60%, 50%) solid 5px;
+    border:hsl(198, 60%, 50%) solid 2px;
     outline: none;
+    transform: scale(1);
 }
 
+.fylo-logo-footer {
+    display: block;
+    margin: 0 0 2em 2em
+}
 
+.icon-location, 
+.icon-phone,
+.icon-email {
+    display: flex;
+    align-items: center;
+}
 
+.contact-info img {
+    margin: 25px;
+}
+
+.footer-nav1 {
+    margin-top: 2rem;
+}
+
+.footer-nav1,
+.footer-nav2 {
+    height: 150px;
+}
+
+.footer-nav1 ul,
+.footer-nav2 ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    margin-left: 25px;
+}
+
+i {
+    font-size: 25px;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding: 0 150px;
+}
+
+.social-icons a:hover {
+    color: hsl(198, 60%, 50%);
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 50px;
+}
         /*--Media Queries----------*/
 
 @media (min-width:375px) {
