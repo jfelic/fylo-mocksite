@@ -53,6 +53,7 @@ header,
     transform: scale(.60);
     padding: 1em 1em 1em .25em;
     margin: 1em 1em 1em .25em;
+    overflow:none;
 }
 
 .main-nav {
@@ -80,6 +81,8 @@ ul {
     text-align:end;
     padding: 1em;
     margin: 1em;
+    min-width: 200px;
+    white-space: nowrap;
 }
 
 
