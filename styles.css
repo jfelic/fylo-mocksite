@@ -11,6 +11,20 @@ body {
     background-color: hsl(218, 28%, 13%);
     color: white;
     font-size: 0.875rem;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 header,
@@ -30,4 +44,53 @@ header,
 
 .testimonials {
     background-color: hsl(219, 30%, 18%);
+}
+
+
+        /*--Typography----------*/
+
+.fylo-logo-header {
+    transform: scale(.60);
+    padding: 1em 1em 1em .25em;
+    margin: 1em 1em 1em .25em;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.navigation ul li {
+    display: inline;
+    padding: .5em;
+    word-wrap: none;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+ul {
+    text-align:end;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+
+
+        /*--Media Queries----------*/
+
+@media (min-width:375px) {
+
+}
+
+@media (min-width: 1440px) {
+
 }
