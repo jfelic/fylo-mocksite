@@ -66,6 +66,10 @@ header,
     align-items: center;
 }
 
+.main-nav ul {
+    text-align: left;
+    white-space: nowrap;
+}
 
 .navigation a:hover,
 .footer-nav1 ul a:hover,
@@ -143,13 +147,20 @@ p,
     color:hsl(198, 100%, 67%);
     text-align: left;
     align-self: flex-start;
-    border-bottom: 2px solid hsl(198, 100%, 67%);
+    border-bottom: 2px solid hsl(176, 68%, 64%);
     padding-bottom: 7px;
 }
 
 .see-how-fylo-works:hover {
     color: hsl(176, 94%, 74%);
     transform: scale(1.07);
+}
+
+.quote {
+    position: relative;
+    top: 30px;
+    color: hsl(176, 68%, 64%);
+    font-size: 225%;
 }
 
 .testimonials {
@@ -159,7 +170,6 @@ p,
     margin-bottom: 325px;
     margin-top: 150px;
 }
-
 
 .satish-block,
 .bruce-block,
@@ -298,6 +308,22 @@ input::placeholder {
 i {
     font-size: 25px;
     background-color: hsl(216, 53%, 9%);
+}
+
+.see-how-fylo-works {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+}
+
+.see-how-fylo-works i {
+    font-size: 15px; 
+    color: hsl(176, 68%, 64%);
+}
+
+.see-how-fylo-works a {
+    color: hsl(176, 94%, 74%);
 }
 
 .social-icons{
